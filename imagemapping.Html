@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Mapping </title>
+</head>
+<body>
+
+<h2>Image Map</h2>
+<p>Click on laptop, book or coffee</p>
+
+<img src="C:\Users\kakum\OneDrive\Desktop\FSD\image.jpg"
+     alt="Study Table"
+     usemap="#studymap"
+     width="500"
+     height="350">
+
+<map name="studymap">
+
+    <!-- Laptop (left side) -->
+    <area shape="rect"
+          coords="170,82,332,255"
+          href="laptop.html"
+          alt="Laptop">
+
+    <!-- Book (center) -->
+    <area shape="rect"
+          coords="20,120,180,300"
+          href="book.html"
+          alt="Book">
+
+    <!-- Coffee (right side) -->
+   <area shape="circle"
+      coords="440,228,45"
+      href="coffee.html"
+      alt="Coffee">
+</map>
+
+</body></html>
