@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Selector Forms</title>
+    </head>
+    <style>
+        p{
+            color:blue;
+        }
+        #para{
+            color:aqua;
+            text-align: center;
+        }
+        .vehicle{
+            background-color: pink;
+            padding:50;
+        }
+        h2,h3{
+            color:green;
+        }
+        *{
+            font-family: 'Lucida Sans';
+        }
+        div p{
+            font-style: italic;
+        }
+        ul>li{
+            color: purple;
+        }
+        h3+p{
+            color:orange;
+        }
+        h4~p{
+            color:aquamarine;
+        }
+        a:hover{
+            color:black;
+            font-weight: bold;
+        }
+        input[type="text"]{
+            border:5px red;
+        }
+    </style>
+    <body>
+        <h1 id="para">CSS Selector Types</h1>
+        <h2>Simple Selectors</h2>
+        <p>This paragraph uses element selector</p>
+        <div class="vehicle">
+            <p>This paragraph uses class selector</p>
+        </div>
+        <h3>Group Selector Example</h3>
+        <h2>Combinatory Selectors</h2>
+        <div>
+            <p>This is s descendant selector example</p>
+        </div>
+        <ul>
+            <li>Child selector item1</li>
+            <li>Child selector item2</li>
+        </ul>
+            <h3>Abjacent Sibling Selector</h3>
+            <p>This paragraph is styled by using adjacent sibling selector</p>
+            <h4>General Sibling Selector</h4>
+            <p>first sibling paragraph</p>
+            <h2>Pseudo-class selector</h2>
+            <a href="https://www.w3schools.com/html/">htmlw3schls</a>
+            <h2>Pseudo-element Selector</h2>
+            <p>This paragraph defines pesudo-element selector</p>
+            <h2>Attribute Selector</h2>
+            <input type="text"name="Text field">
+            <br><br>
+            <input type="password"name="password field">
+        
+    </body>
+</html>
