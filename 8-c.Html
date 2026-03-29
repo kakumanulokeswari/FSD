@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loops Example</title>
+<script>
+function printNumbers() {
+
+    // Using FOR loop
+    document.write("<h3>Using FOR Loop:</h3>");
+    for (let i = 1; i <= 10; i++) {
+        document.write(i + "<br>");
+    }
+
+    // Using WHILE loop
+    document.write("<h3>Using WHILE Loop:</h3>");
+    let j = 1;
+    while (j <= 10) {
+        document.write(j + "<br>");
+        j++;
+    }
+
+    // Using DO-WHILE loop
+    document.write("<h3>Using DO-WHILE Loop:</h3>");
+    let k = 1;
+    do {
+        document.write(k + "<br>");
+        k++;
+    } while (k <= 10);
+}
+</script>
+</head>
+
+<body onload="printNumbers()">
+</body>
+</html>
