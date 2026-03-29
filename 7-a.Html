@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Document Object Example</title>
+</head>
+
+<body>
+
+<h1 id="title">Welcome to JavaScript</h1>
+<p id="text">This is a sample paragraph.</p>
+
+<button onclick="changeContent()">Click Me</button>
+
+<script>
+function changeContent() {
+
+    // document property
+    document.title = "Document Object Demo";
+
+    // document method
+    document.getElementById("title").innerHTML = "Title Changed!";
+
+    // another document method
+    document.getElementById("text").style.color = "blue";
+
+    // document property showing last modified date
+    alert("Last Modified: " + document.lastModified);
+}
+</script>
+
+</body>
+</html>
