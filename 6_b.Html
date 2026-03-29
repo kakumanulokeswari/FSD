@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Output Methods Demo</title>
+
+    <script>
+        function showInnerHTML() {
+            document.getElementById("demo").innerHTML =
+            "Hello World using innerHTML";
+        }
+
+        function showDocumentWrite() {
+            document.write("Hello World using document.write()");
+        }
+
+        function showAlert() {
+            alert("Hello World using alert()");
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>JavaScript Output Methods Demo</h2>
+
+    <button onclick="showInnerHTML()">Show innerHTML</button>
+    <p id="demo"></p>
+
+    <br>
+
+    <button onclick="showDocumentWrite()">Show document.write()</button>
+
+    <br><br>
+
+    <button onclick="showAlert()">Show alert()</button>
+
+</body>
+</html>
