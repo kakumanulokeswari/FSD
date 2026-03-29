@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embedding JavaScript Example</title>
+
+    <!-- Internal JavaScript -->
+    <script>
+        function showInternal() {
+            document.getElementById("internal").innerHTML =
+            "This message is from Internal JavaScript.";
+        }
+    </script>
+
+</head>
+<body>
+
+    <h2>Embedding JavaScript Example</h2>
+
+    <!-- Internal JS Button -->
+    <button onclick="showInternal()">Show Internal JS</button>
+    <p id="internal"></p>
+
+    <br><br>
+
+    <!-- External JS Button -->
+    <button onclick="showExternal()">Show External JS</button>
+    <p id="external"></p>
+
+    <!-- External JavaScript File -->
+    <script src="external.js"></script>
+
+</body>
+</html>
