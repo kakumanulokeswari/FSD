@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RegExp Object Example</title>
+</head>
+<body>
+    <h2>RegExp Object</h2>
+    <p id="msg"></p>
+
+    <script>
+        const str = "JavaScript is easy";
+        const pattern = /easy/;
+
+        document.getElementById("msg").innerHTML =
+            "String: " + str +
+            "<br>Pattern: " + pattern +
+            "<br>Test Result: " + pattern.test(str) +
+            "<br>Match Result: " + str.match(pattern);
+    </script>
+</body>
+</html>
