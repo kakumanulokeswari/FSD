@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>User Defined Object Example</h3>
+<p id="output"></p>
+
+<script>
+function Student(name, age, mark) {
+    // Properties
+    this.name = name;
+    this.age = age;
+    this.mark = mark;
+
+    // Method
+    this.display = function() {
+        return "Name: " + this.name + "<br>" +
+               "Age: " + this.age + "<br>" +
+               "Mark: " + this.mark;
+    };
+}
+
+// Accessor (Getter)
+Object.defineProperty(Student.prototype, "info", {
+    get: function() {
+        return this.name + " scored " + this.mark + " marks";
+    }
+});
+
+// Object creation (Constructor)
+var s1 = new Student("Sri", 20, 90);
+
+// Display output
+document.getElementById("output").innerHTML =
+    s1.display() + "<br>" + s1.info;
+</script>
+
+</body>
+</html>
