@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Object Example</title>
+</head>
+<body>
+    <h2>Date Object</h2>
+    <p id="msg"></p>
+
+    <script>
+        const today = new Date();
+
+        document.getElementById("msg").innerHTML =
+            "Current Date: " + today +
+            "<br>Year: " + today.getFullYear() +
+            "<br>Month: " + (today.getMonth() + 1) +
+            "<br>Date: " + today.getDate();
+    </script>
+</body>
+</html>
