@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Object Example</title>
+</head>
+<body>
+
+<h3>Window Object Example</h3>
+<p id="output"></p>
+
+<button onclick="showMessage()">Click Here</button>
+
+<script>
+function showMessage() {
+    alert("Welcome to JavaScript!");
+
+    var name = prompt("Enter your name:");
+
+    if (confirm("Do you want to continue?")) {
+        document.getElementById("output").innerHTML =
+            "Hello " + name + "! Welcome to the page.";
+    }
+}
+</script>
+
+</body>
+</html>
