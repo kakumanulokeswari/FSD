@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Input Methods</title>
+
+    <script>
+        // Function to get input from HTML form
+        function getFormInput() {
+            let name = document.getElementById("nameInput").value;
+            document.getElementById("formResult").innerHTML =
+                "Input from HTML Form: " + name;
+        }
+
+        // Function to get input using prompt()
+        function getPromptInput() {
+            let age = prompt("Enter your age:");
+            document.getElementById("promptResult").innerHTML =
+                "Input from Prompt: " + age;
+        }
+
+        // Function to get input using confirm()
+        function getConfirm() {
+            let result = confirm("Do you confirm your input?");
+
+            if (result) {
+                document.getElementById("confirmResult").innerHTML =
+                    "Input from Confirm: User confirmed";
+            } else {
+                document.getElementById("confirmResult").innerHTML =
+                    "Input from Confirm: User cancelled";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>JavaScript Input Methods</h1>
+
+    <!-- HTML Form Input -->
+    <p>
+        Enter Name:
+        <input type="text" id="nameInput">
+        <button onclick="getFormInput()">Submit</button>
+    </p>
+    <p id="formResult"></p>
+
+    <hr>
+
+    <!-- Prompt Input -->
+    <button onclick="getPromptInput()">Enter Age (Prompt)</button>
+    <p id="promptResult"></p>
+
+    <hr>
+
+    <!-- Confirm Input -->
+    <button onclick="getConfirm()">Confirm Input</button>
+    <p id="confirmResult"></p>
+
+</body>
+</html>
