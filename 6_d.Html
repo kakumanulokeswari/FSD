@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voter Eligibility</title>
+    <script>
+        function checkVoter() {
+
+            const name = prompt("Enter your name:");
+            const age = parseInt(prompt("Enter your age:"), 10);
+
+            let status;
+
+            if (age >= 18) {
+                status = "Eligible to Vote";
+            } else {
+                status = "Not Eligible to Vote";
+            }
+
+            document.getElementById("voterName").textContent = name;
+            document.getElementById("voterAge").textContent = age;
+            document.getElementById("voterStatus").textContent = status;
+        }
+
+        window.onload = checkVoter;
+    </script>
+</head>
+<body>
+
+    <h2>Voter Eligibility Details</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Voting Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="voterName"></td>
+                <td id="voterAge"></td>
+                <td id="voterStatus"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
